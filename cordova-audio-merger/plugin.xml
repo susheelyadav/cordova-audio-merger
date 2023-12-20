@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="AudioMerger" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>AudioMerger</name>
+    <js-module src="www/AudioMerger.js" name="AudioMerger">
+        <clobbers target="AudioMerger" />
+    </js-module>
+    <dependency id="cordova-plugin-cocoapod-support"/>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AudioMerger">
+                <param name="android-package" value="org.sathya.narayan.audiomerger.AudioMerger" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/AudioMerger.java" target-dir="src/org/sathya/narayan/audiomerger" />
+        <framework custom="true" src="src/android/mobile-ffmpeg-x2.gradle" type="gradleReference" />
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AudioMerger">
+                <param name="ios-package" value="AudioMerger" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/AudioMerger.h" />
+        <source-file src="src/ios/AudioMerger.m" />
+        <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
+        <pod name="ffmpeg-kit-ios-full" spec="~> 6.0" />
+    </platform>
+</plugin>

@@ -1,0 +1,12 @@
+{
+	"name": "cordova-audio-merger",
+	"version": "1.0.0",
+	"description": "This Cordova plugin allows you to merge multiple audio files into a single audio file, ensuring the same codec and bitrate are used across all files",
+	"main": "index.js",
+	"keywords": [
+		"ecosystem:cordova",
+		"cordova-android"
+	],
+	"author": "Vladislav Khomenko",
+	"license": "ISC"
+}
