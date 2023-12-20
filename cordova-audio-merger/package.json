@@ -6,7 +6,21 @@
 	"keywords": [
 		"ecosystem:cordova",
 		"cordova-android"
-	]
+	],
+	"repository": {
+    	"type": "git",
+    	"url": "https://github.com/susheelyadav/cordova-audio-merger.git"
+	},
+	"engines": {
+    	"cordova": "^9.0.0"
+	},
+	"cordova": {
+   	 "platforms": [
+       		 "android",
+        	"ios"
+    		]
+	},
+	
 	"author": "Vladislav Khomenko",
 	"license": "ISC"
 }
