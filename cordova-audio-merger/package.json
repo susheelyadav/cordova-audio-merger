@@ -9,7 +9,7 @@
 	],
 	"repository": {
     	"type": "git",
-    	 "url": "git+https://github.com/susheelyadav/cordova-audio-merger-latest"
+    	 "url": "git+https://github.com/susheelyadav/cordova-audio-merger-latest.git"
   	},
 	"author": "Vladislav Khomenko",
 	"license": "ISC"
